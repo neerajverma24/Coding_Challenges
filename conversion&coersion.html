@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion and coersion</title>
+</head>
+
+<body>
+    <script>
+
+        // type conversion
+        const inputYear = "1999";
+        console.log(Number(inputYear));
+        console.log(Number('Neeraj'));
+        console.log(typeof inputYear);
+        console.log(Number(inputYear) + 12);
+        console.log(String(25), 45); // here 25 is string and 45 is a number
+
+        // type coersion
+        console.log("I'm " + 23 + " years old"); // + operator is a coercion type which converts numbers into string
+        console.log("23" - "10" - 3); // 10, because js coonverts 23-10=13 then subtract 3 from the number
+        console.log("23" + "10" + 3); // 23103 because 23,10  is a string and simply added 3 behind it
+        console.log("23" * "2"); // result 46 , it directly multilied both the numbers
+        console.log("23" / "2"); // result is 11.5 , it divides both the number
+
+        // lets take another example
+        let m = "4" + 1; // 41 
+        m = m - 1; // 40 
+        console.log(m); // 40  
+
+        // example 2
+        console.log(2 + 3 + 4 + '5'); // 95, added  2,3,4 and then add string
+
+        // example 3 
+        console.log('10' - '4' - '3' - '2' + '5'); // result is 15 , because it subtract 10,4,3,2 and then add string at last
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+
+<body>
+    <script>
+        const age = 20;
+        if (age >= 18) {
+            document.write('Bhavya is eligible for driving licence.');
+        }
+        else {
+            const yearLeft = 18 - age;
+            alert(`Wait for another ${yearLeft} years !`);
+        }
+
+        // another example of if_else
+        const birthYear = 1895;
+        let century;
+        if (birthYear <= 2000) {
+            century = 20;
+        } else {
+            century = 21;
+        }
+        document.write("<br>" + century);
+
+    </script>
+</body>
+
+</html>

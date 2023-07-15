@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        const name = "Neeraj Verma";
+        const job = "Student";
+        const birthYear = 1999;
+        const year = 2023;
+
+        document.write("Hii I'm " + name + "a " + (year - birthYear) + " " + job + " !");
+
+        // another way 
+        const newName = `<br> I'm ${name}, a ${year - birthYear}, ${job}!`
+        document.write(newName)
+
+        document.write(`<br>Its just a String, We can use it again and again , and with different method, see vs-studio `)
+
+        // NOT WORKING WITH document.write but working with console
+        console.log(
+            'String with \n\ new line \n\ multiple lines');
+
+            document.write(`<br> Check console.log \n\ for the string in a new line `)
+        console.log(`String 
+        with
+        multiple lines`);
+
+        document.write`hello \n\
+        world`;
+
+
+
+    </script>
+</body>
+
+</html>

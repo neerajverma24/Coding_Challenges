@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalilty Operators</title>
+</head>
+<body>
+    <script>
+        const age = '18';
+        if (age == 18)    // loose equality operator
+        {
+            document.write("You are an adult ! (loose)");  
+        }
+
+        if (age === 18)     // strict equality operator, this will not work with "18" which is a string.
+        {
+            document.write("You are an adult ! (strict)");
+        }
+
+
+        // another example
+            const favourite = Number(prompt("What is your age?"));
+            document.write(favourite);
+            document.write(typeof favourite);
+
+            if (favourite === 23) {
+                document.write("<br> Cool! 23 is a good age.");
+            }
+            else if (favourite <=23) {
+                document.write("<br> oh! You are below 23.");
+            }
+            else if (favourite >=23) {
+                document.write("<br> oh! You are above 23.");
+            }
+           
+            if (favourite !== 23) {
+                document.write("<br> Why not 23.");  // if we write other than 23 it will write this also.
+            }
+        
+    </script>
+</body>
+</html>
